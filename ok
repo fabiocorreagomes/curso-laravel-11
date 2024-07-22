@@ -1,0 +1,11 @@
+[90m= [39m[34;4mApp\Models\User[39;24m {#5200
+    [34mname[39m: "[32mTelly Bayer[39m",
+    [34memail[39m: "[32mlnicolas@example.com[39m",
+    [34memail_verified_at[39m: "[32m2024-07-22 20:45:44[39m",
+    #[33mpassword[39m: "[32m$2y$12$JdBQZnm03g6Fv4UM9NZYIOBlypXCjnICgCLImP0yEZoWCCwUjMJ5K[39m",
+    #[33mremember_token[39m: "[32meRjSwXNIOx[39m",
+    [34mupdated_at[39m: "[32m2024-07-22 20:45:45[39m",
+    [34mcreated_at[39m: "[32m2024-07-22 20:45:45[39m",
+    [34mid[39m: [35m22[39m,
+  }
+
