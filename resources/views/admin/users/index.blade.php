@@ -1,12 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Usuários</h1>
+@extends('admin.layouts.app')
+
+@section('title', 'Listagem dos Usuários')
+
+@section('content')
+
+<h1>Usuários</h1>
+
+<a href="{{ route('users.create') }}">Novo</a>
+
+    <x-alert/>
 
     <table>
         <thead>
@@ -21,7 +23,10 @@
                 <tr>
                     <td>{{ $user->name }}</td>
                     <td>{{ $user->email }}</td>
-                    <td>-</td>
+                    <td>
+                        <a href="{{ route('users.edit', $user->id) }}">Edit</a>
+                        <a href="{{ route('users.show', $user->id) }}">Detalhes</a>
+                    </td>
                 </tr>
             @empty
             <tr>
@@ -33,5 +38,4 @@
 
     {{ $users->links() }}
 
-</body>
-</html>
+@endsection
